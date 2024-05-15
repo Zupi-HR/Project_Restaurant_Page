@@ -1,7 +1,24 @@
+import createNavigation from './navigation';
 import createContent from './home';
-import './style.css';
+import createMenu from './menu';
+import './index.css';
 
-document.body.appendChild(createContent());
+
+const header = document.querySelector('header');
+const nav = document.querySelector('nav');
+const content = document.getElementById('content');
+
+
+nav.addEventListener('click', function(event) {
+  if (event.target.classList.contains("menu-btn")) {
+    content.innerHTML = "";
+     content.appendChild = createMenu();
+  }
+})
+
+content.append(createContent());
+
+
 
 
 console.log("hello")
