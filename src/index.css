@@ -1,8 +1,10 @@
+
 body {
     background-color: rgb(238, 176, 53);
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    background-image: url("./background-image.png");
 }
 
 #content {

@@ -1,4 +1,5 @@
 
+import './common.css';
 import Icon from './honeycomb.svg';
 import './home.css';
 
@@ -28,9 +29,6 @@ function createElements() {
         mainContent.appendChild(div);
     }
 
-
-
-
     return mainContent;
 }
 
@@ -46,4 +44,4 @@ function createContent() {
 
 
 
-export default createContent;
+export default createElements;

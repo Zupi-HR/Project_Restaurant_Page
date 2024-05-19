@@ -5,31 +5,11 @@
     font-style: normal;
 }
 
-
 .honey-comb {
     width: 60px;
     position: absolute;
 }
 
-h1 {
-    border: 20px solid #c16a08;
-    padding: 20px;
-    border-radius: 20%;
-    font-size: 45px;
-    font-family: "MyFont", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.mainContent {
-    display: grid;
-    row-gap: 20px;
-    justify-items: center;
-    padding: 50px;
-    background-color: #f9ce3f;
-    border-radius: 30px;
-    width: 810px;
-}
 
 .firstDiv, .secondDiv, .thirdDiv {
     width: 450px;
