@@ -6,36 +6,28 @@ import bearyTea from './menuImages/honey-tea.jpg';
 import toastAndJam from './menuImages/toast_and_jam.jpg';
 import freshFruit from './menuImages/fresh_fruit.jpeg';
 
+class Item {
+    constructor(name, description, price, image) {
+        this.name = name;
+        this.description = description;
+        this.price = price;
+        this.image = image;
+    }
+}
 
 const beverages = [
-    {
-        name: 'Honey Tea',
-        description: 'A warm, sweet tea made with the highest quality honey and a bit of lemon to start your day off right!',
-        price: '$2',
-        image: `${honeyTea}`
-    },
-    {
-        name: 'Beary Tea',
-        description: 'A comforting, almost filling, tea that is infused with the flavors of several kinds of berries. Best served cold, but can be served hot on request.',
-        price: '$3',
-        image: `${bearyTea}`
-    },
+    new Item('Honey Tea', 'A warm, sweet tea made with the highest quality honey and a bit of lemon to start your day off right!', '$2', honeyTea),
+    new Item('Beary Tea', 'A comforting, almost filling, tea that is infused with the flavors of several kinds of berries. Best served cold, but can be served hot on request.', '$3', bearyTea)
 ];
 
+
+
 const sides = [
-    {
-        name: 'Toast and Jam',
-        description: 'A slice of toast, your choice of bread, and our homemade blackberry or raspberry jam.',
-        price: '$1',
-        image: `${toastAndJam}`
-    },
-    {
-        name: 'Fresh Fruit',
-        description: 'A small bowl of fresh fruit, whatever we find at the market for the day.',
-        price: '$3',
-        image: `${freshFruit}`
-    }
+    new Item('Toast and Jam', 'A slice of toast, your choice of bread, and our homemade blackberry or raspberry jam', '$1', toastAndJam),
+    new Item('Fresh Fruit', 'A small bowl of fresh fruit, whatever we find at the market for the day', '$3', freshFruit)
 ]
+
+
 
 function createMenu() {
     const mainContent = document.createElement('mainContent');

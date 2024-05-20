@@ -20,7 +20,7 @@ nav.addEventListener('click', function(event) {
     content.replaceChildren();
     content.appendChild(createElements());
   }
-})
+});
 
 
 console.log("hello")
